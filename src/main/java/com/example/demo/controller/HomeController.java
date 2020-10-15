@@ -19,3 +19,7 @@ public class HomeController {
     }
 }
 
+// Hey Clause
+// Jeg markante mærkelig problemer under hele "prøve-Eksamen" med min PC. Ikke at det var en undskyldning for jeg ik blev færdig
+// Men der blev brugt en del tid på det
+
