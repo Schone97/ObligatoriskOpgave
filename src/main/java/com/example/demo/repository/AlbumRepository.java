@@ -1,37 +1,23 @@
 package com.example.demo.repository;
 
-import com.example.demo.model.Album;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
+public class AlbumRepository  {
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class AlbumRepository implements IAlbumRepository{
-
-    @Autowired
-    JdbcTemplate jdbcTemplate;
-    SqlRowSet sqlRowSet;
-
-    @Override
+    /*@Override
     public boolean create(Album album) {
         return false;
     }
-
     @Override
     public List<Album> readAll() {
+        // Creates a list to return
         List<Album> albumToReturn = new ArrayList<>();
-        String sql = "SELECT * FROM Album";
+        String sql = "SELECT * FROM ALBUM";
         sqlRowSet = jdbcTemplate.queryForRowSet(sql);
-
         while(sqlRowSet.next()){
             albumToReturn.add(new Album(sqlRowSet.getLong("id"),
-
-                    sqlRowSet.getString("title"),
-                    sqlRowSet.getString("artistName"),
-                    sqlRowSet.getString("genreCategory")));
+                    sqlRowSet.getString("artist_name"),
+                    sqlRowSet.getString("genre_category"),
+                    sqlRowSet.getString("title")));
         }
         return albumToReturn;
-    }
+    }*/
 }
